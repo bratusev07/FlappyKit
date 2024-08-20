@@ -915,7 +915,7 @@ MonoBehaviour:
   spawnInterval: 2
   minHeight: -6.15
   maxHeight: -2
-  moveSpeed: 2
+  moveSpeed: 2.5
   timer: 0
 --- !u!4 &950615526
 Transform:
