@@ -11,6 +11,8 @@ public class FloorColliderScript : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Player") {
             SceneManager.LoadSceneAsync(1);
+            if (PlayerPrefs.GetInt("BestScore") < ScoreColliderScript.score) PlayerPrefs.SetInt("BestScore", ScoreColliderScript.score);
+            ScoreColliderScript.score = 0;
         }
     }
 
@@ -18,6 +20,8 @@ public class FloorColliderScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player") {
             SceneManager.LoadSceneAsync(1);
+            if (PlayerPrefs.GetInt("BestScore") < ScoreColliderScript.score) PlayerPrefs.SetInt("BestScore", ScoreColliderScript.score);
+            ScoreColliderScript.score = 0;
         }
     }
 }

@@ -31,6 +31,10 @@ public class FlyingScript : MonoBehaviour
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, startMoveSpeed, 0), ForceMode2D.Impulse);
             }
         }
+        else if (Input.GetKeyDown(KeyCode.PageUp))
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, startMoveSpeed, 0), ForceMode2D.Impulse);
+        }
     }
 
     private float targetRotation = 0;

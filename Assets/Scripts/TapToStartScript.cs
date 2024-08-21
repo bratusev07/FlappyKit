@@ -19,6 +19,10 @@ public class TapToStartScript : MonoBehaviour
                 Time.timeScale = 1f;
                 Destroy(gameObject);
             }
+        } else if (Input.GetKeyDown(KeyCode.PageUp))
+        {
+            Time.timeScale = 1f;
+            Destroy(gameObject);
         }
     }
 }
